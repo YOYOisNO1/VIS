@@ -23,8 +23,9 @@ To facilitate researchers to reproduce our experiments, we provide solution resu
  ```
  
 ## Dataset Collection
-VIS requires the collection of adversarial examples, and in this study, we chose to use ALERT as the method for collecting 
-adversarial examples. For details on using ALERT, please refer to "Natural Attack for Pre-trained Models of Code."
+VIS requires the collection of adversarial examples, and in this study, we chose to use MHM as the method for collecting 
+adversarial examples. For details on using MHM, please refer to "Generating adversarial examples for holding robustness of source
+code processing models."
 
 
 ##VIS Tarining
