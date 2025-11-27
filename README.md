@@ -1,4 +1,4 @@
-# VIS
+# KINDLE
 
 This replication package contains the adversarial example generation for nine target models (three pre-trained models of code and three downstream tasks). It includes Surrogate Model Generation via robustness-guided knowledge distillation, and attacking the code models.
 
@@ -12,7 +12,7 @@ bash build.sh
 ```
 
 ## KD Results
-To facilitate researchers to reproduce our experiments, we provide solution results for the model search space.:
+To facilitate researchers in reproducing our experiments, we provide solution results for the model search space.:
 
 ```
 3MB:{'attention_heads': 8, 'hidden_dim': 96, 'intermediate_size': 64, 'n_layers': 12, 'vocab_size': 1000}
@@ -23,14 +23,14 @@ To facilitate researchers to reproduce our experiments, we provide solution resu
  ```
  
 ## Dataset Collection
-VIS requires the collection of adversarial examples, and in this study, we chose to use MHM as the method for collecting 
+KINDLE requires the collection of adversarial examples, and in this study, we chose to use MHM as the method for collecting 
 adversarial examples. For details on using MHM, please refer to "Generating adversarial examples for holding robustness of source
 code processing models."
 
 
-##VIS Training
+##KINDLE Training
 
-Once the data is prepared, we can proceed with the final VIS training. For example, in the path /vulnerability_prediction/distill, we execute the following command to complete the model training:
+Once the data is prepared, we can proceed with the final KINDLE training. For example, in the path /vulnerability_prediction/distill, we execute the following command to complete the model training:
 
 ```
 python3 distill.py \
