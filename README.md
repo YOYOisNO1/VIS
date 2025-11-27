@@ -1,11 +1,11 @@
 # VIS
 
-This replication package contains the adversarial attack pre-trained model, GA-guided model reduction, and source code for training.
+This replication package contains the adversarial example generation for nine target models (three pre-trained models of code and three downstream tasks). It includes Surrogate Model Generation via robustness-guided knowledge distillation, and attacking the code models.
 
 ## Environment configuration
 
 
-GraphCodeBERT need a parser to extract data flows from the source code, please go to `./parser` to compile the parser first. Pls run:
+GraphCodeBERT needs a parser to extract data flows from the source code. Please go to `./parser` to compile the parser first. Pls run:
 ```
 cd parser
 bash build.sh
@@ -28,7 +28,7 @@ adversarial examples. For details on using MHM, please refer to "Generating adve
 code processing models."
 
 
-##VIS Tarining
+##VIS Training
 
 Once the data is prepared, we can proceed with the final VIS training. For example, in the path /vulnerability_prediction/distill, we execute the following command to complete the model training:
 
